@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: "Poppins";
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(45deg, #002523, #2d002c);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  padding: 1em 2em;
+  background-color: #010029;
+  border-radius: 1rem;
+  font-size: 24px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s ease-in-out;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transform: scale(1.05);
+  border-radius: 1rem;
+  background: linear-gradient(to top right, #00fff7, #ff00f7);
+  z-index: -1;
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+button:hover {
+  z-index: 0;
+  box-shadow: 25px 0 100px #e100ff, -25px 0 100px #008cff;
+}
+
+#name {
+  color: white;
+  margin-bottom: 1rem;
+}
